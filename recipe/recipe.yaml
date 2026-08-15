@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.0"
+  version: "0.4.0"
 
 package:
   name: jupyterlite-pdf-exporter
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyterlite-pdf-exporter/jupyterlite_pdf_exporter-${{ version }}.tar.gz
-  sha256: 7d1ffb1cbadfa45a6a44f00e308f0c9af3ec84783d4e7297eabd2933e115e611
+  sha256: 5486c868f501d9cb1bed30a6a26960aa46e0f894abc8d917638ec4fd93d27e4b
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - hatchling >=1.5.0
-    - jupyterlab >=4.0.0,<5
+    - jupyter-builder >=1.2.0,<2
     - hatch-nodejs-version >=0.3.2
     - hatch-jupyter-builder >=0.5
     - pip
